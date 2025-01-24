@@ -7,5 +7,5 @@ image = load_image('lena.jpg')
 image = median(image, ball(3))
 edge = edge_detection(image)
 edge_binary = edge > 50
-image = Image.fromarray(array)
-image.save('lena_edges.png')
+edge_image = Image.fromarray(edge_binary)
+edge_image.save('lena_edges.png')
